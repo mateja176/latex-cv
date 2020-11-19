@@ -107,6 +107,10 @@
   \def\lastupdatedtext{Last Updated on}
 \fi
 
+\newcommand{\langitem}[1]{%
+  \textsf{\subtitlefont{#1}}%
+}
+
 \setlength{\TPHorizModule}{0.01\paperwidth}
 \setlength{\TPVertModule}{0.01\paperwidth}
 
