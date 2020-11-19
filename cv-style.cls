@@ -60,6 +60,7 @@
 \newfontfamily\thinfont{Roboto-Thin}[Path=fonts/]
 \newfontfamily\headingfont{RobotoCondensed-Bold}[Path=fonts/]
 \newfontfamily\subtitlefont{Roboto-Medium}[Path=fonts/]
+\newfontfamily\bluefont{Roboto-Regular}[Path=fonts/]
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor, Path = fonts/]{Roboto-Light}
@@ -158,6 +159,10 @@
 }
 \newcommand{\subtitle}[1]{%
     {\color{gray}\subtitlefont #1}%
+}
+
+\newcommand{\bluehref}[2]{%
+    {\href{#1}{{\color{aquamarine}\bluefont #2}}}%
 }
 
 \pagestyle{empty}
