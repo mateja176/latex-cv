@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>fancy.bcf</file>
+      <file>Mateja-Petrovic-CV.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>fancy.bbl</file>
+      <file>Mateja-Petrovic-CV.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -66,19 +66,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>fancy</infile>
+      <infile>Mateja-Petrovic-CV</infile>
     </cmdline>
     <input>
-      <file>fancy.bcf</file>
+      <file>Mateja-Petrovic-CV.bcf</file>
     </input>
     <output>
-      <file>fancy.bbl</file>
+      <file>Mateja-Petrovic-CV.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>fancy.bbl</file>
+      <file>Mateja-Petrovic-CV.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>fancy.bcf</file>
+      <file>Mateja-Petrovic-CV.bcf</file>
     </requires>
   </external>
 </requests>
