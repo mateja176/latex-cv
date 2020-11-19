@@ -59,6 +59,7 @@
 \newfontfamily\bodyfontit{Roboto-LightItalic}[Path=fonts/]
 \newfontfamily\thinfont{Roboto-Thin}[Path=fonts/]
 \newfontfamily\headingfont{RobotoCondensed-Bold}[Path=fonts/]
+\newfontfamily\subtitlefont{Roboto-Medium}[Path=fonts/]
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor, Path = fonts/]{Roboto-Light}
@@ -154,6 +155,9 @@
 
 \newcommand{\jobtitle}[1]{%
     {\color{gray}\bodyfontit #1}%
+}
+\newcommand{\subtitle}[1]{%
+    {\color{gray}\subtitlefont #1}%
 }
 
 \pagestyle{empty}
