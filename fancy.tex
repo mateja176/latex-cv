@@ -5,6 +5,8 @@
                                     % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
 
 \usepackage[backend=biber]{biblatex}
+\usepackage{tabularx}
+\renewcommand\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column
 
 \sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut
 
@@ -125,6 +127,27 @@ UX \& UI, Application Architecture, DevOps, Team work, Mentoring, Leadership
   {(Dropped out)}
   %------------------------------------------------
 \end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	OTHER QUALIFICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{applications}
+
+\def\arraystretch{1.5}%  1 is the default, change whatever you need
+\begin{tabularx}{1\textwidth} {
+    | >{\centering\arraybackslash}X
+    | >{\centering\arraybackslash}X
+    | >{\centering\arraybackslash}X
+    | >{\centering\arraybackslash}X |}
+  \hline
+  \textbf{App}      & \textbf{Tech}                         & \textbf{Description}           & \textbf{Link}                                                   \\
+  \hline
+  Learn-ed          & NextJS and Grommet Components         & The easy way to a Frontend Job & \href{https://learn-ed.web.app}{learn-ed}                       \\
+  Video Storyteller & React, Material UI and Firebase       & Create whiteboard animations   & \href{https://video-storyteller-dev.web.app}{video-storyteller} \\
+  Njam Njam         & React, Ant Design, NodeJS and GraphQL & Order food with your pals      & \href{https://njam-njam.web.app}{njam-njam}                     \\
+  \hline
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	OTHER QUALIFICATIONS SECTION
