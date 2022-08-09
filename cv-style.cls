@@ -215,7 +215,7 @@
 % Other tweaks %
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[left=5.6cm,top=1cm,right=1cm,bottom=0cm,nohead,nofoot]{geometry}
+\RequirePackage[left=5.2cm,top=1cm,right=1cm,bottom=0cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -223,3 +223,6 @@
     pdfauthor=Mateja Petrovic,
     pdfsubject=CV%
     }
+\newcommand{\daterange}[1]{%
+  {\small\color{gray}\bodyfont #1}
+}
